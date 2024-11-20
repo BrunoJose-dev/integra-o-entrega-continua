@@ -35,7 +35,7 @@ jobs:
 
     - name: Enviar imagem para DockerHub
       run: |
-        docker push ${{ secrets.DOCKER_USERNAME }}/trabalhoIntegracaoEntrega:latest
+        docker push ${{ secrets.DOCKER_USERNAME }}/INTEGRA-O-ENTREGA-CONTINUA:latest
 
   deploy:
     runs-on: ubuntu-latest
