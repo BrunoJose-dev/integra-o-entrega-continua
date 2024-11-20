@@ -31,7 +31,7 @@ jobs:
 
     - name: Build da imagem Docker
       run: |
-         docker build -t ${{ secrets.DOCKER_USERNAME }}/trabalhoIntegracaoEntrega:latest .
+         docker build -t ${{ secrets.DOCKER_USERNAME }}/INTEGRA-O-ENTREGA-CONTINUA:latest .
 
     - name: Enviar imagem para DockerHub
       run: |
@@ -52,7 +52,7 @@ jobs:
         username: ${{ secrets.REMOTE_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          docker pull ${{ secrets.DOCKER_USERNAME }}/trabalhoIntegracaoEntrega:latest
+          docker pull ${{ secrets.DOCKER_USERNAME }}/INTEGRA-O-ENTREGA-CONTINUA:latest
           docker stop trabalhoIntegracaoEntrega || true
           docker rm trabalhoIntegracaoEntrega || true
-          docker run -d -p 8084:3000 --name trabalhoIntegracaoEntrega ${{ secrets.DOCKER_USERNAME }}/trabalhoIntegracaoEntrega:latest
+          docker run -d -p 8084:3000 --name trabalhoIntegracaoEntrega ${{ secrets.DOCKER_USERNAME }}/INTEGRA-O-ENTREGA-CONTINUA:latest
