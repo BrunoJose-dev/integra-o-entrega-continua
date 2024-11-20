@@ -1,0 +1,17 @@
+{
+    "name": "trabalhoIntegracaoEntrega",
+    "version": "1.0.0",
+    "main": "areaCirculo.js",
+    "scripts": {
+      "start": "node areaCirculo.js",
+      "dev": "node node_modules/.bin/nodemon areaCirculo.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+      "nodemon": "^3.1.7"
+    }
+  }
+  

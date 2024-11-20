@@ -1,0 +1,24 @@
+# Calculadora de Área do Círculo
+
+Este é um projeto simples desenvolvido em Node.js para calcular a área de um círculo com base no raio fornecido pelo usuário. Ele utiliza o módulo HTTP para criar um servidor web que aceita solicitações GET e retorna o resultado.
+
+## Como Funciona
+
+O projeto possui:
+1. Uma página inicial com um formulário onde o usuário pode inserir o raio do círculo.
+2. Um cálculo realizado no servidor que utiliza a fórmula da área do círculo: 
+   \[
+   \text{Área} = \pi \times \text{raio}^2
+   \]
+3. Uma página de resultado que exibe a área calculada.
+
+## Pré-requisitos
+
+- **Node.js** instalado na máquina. [Baixe aqui](https://nodejs.org/)
+
+## Como Usar
+
+1. **Clone ou baixe o repositório**:
+   ```bash
+   git clone https://github.com/seu-usuario/calculadora-area-circulo.git
+   cd calculadora-area-circulo
