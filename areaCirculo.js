@@ -3,7 +3,7 @@ const http = require('http');
 function calcularAreaCirculo(raio) {
   if (raio <= 0) return 'O raio deve ser um valor positivo.';
   const area = Math.PI * Math.pow(raio, 2);
-  return `A area do circulo com raio ${raio} é ${area.toFixed(2)} unidades quadradas.`;
+  return `A area do circulo com raio ${raio} é ${area.toFixed(2)} Unidades quadradas.`;
 }
 
 const server = http.createServer((req, res) => {
