@@ -31,10 +31,11 @@ jobs:
 
     - name: Build da imagem Docker
       run: |
-         docker build -t ${{ secrets.DOCKER_USERNAME }}/integra-o-entrega-continua:latest .
+         docker build -t integra-o-entrega-continua
 
     - name: Enviar imagem para DockerHub
       run: |
+        docker tag integra-o-entrega-continua ${{ secrets.DOCKER_USERNAME }}/integra-o-entrega-continua:latest
         docker push ${{ secrets.DOCKER_USERNAME }}/integra-o-entrega-continua:latest
 
   deploy:
