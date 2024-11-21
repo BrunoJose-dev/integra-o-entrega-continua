@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
   } else {
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.end(`
-      <h1>Calculadora de Area do Circulo</h1>
+      <h1>Calculadora </h1>
       <form action="/calcularArea" method="get">
         <label>Raio do circulo:</label>
         <input type="number" step="0.1" name="raio" required><br>
