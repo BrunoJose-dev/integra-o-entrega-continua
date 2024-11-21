@@ -35,7 +35,7 @@ jobs:
 
     - name: Enviar imagem para DockerHub
       run: |
-        docker tag integra-o-entrega-continua ${{ secrets.DOCKER_USERNAME }}/integra-o-entrega-continua:latest
+        docker tag integra-o-entrega-continua:latest ${{ secrets.DOCKER_USERNAME }}/integra-o-entrega-continua:latest
         docker push ${{ secrets.DOCKER_USERNAME }}/integra-o-entrega-continua:latest
 
   deploy:
