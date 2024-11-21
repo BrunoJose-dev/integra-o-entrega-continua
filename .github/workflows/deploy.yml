@@ -31,7 +31,7 @@ jobs:
 
     - name: Build da imagem Docker
       run: |
-         docker build -t integra-o-entrega-continua:latest
+         docker build . -t integra-o-entrega-continua:latest
 
     - name: Enviar imagem para DockerHub
       run: |
